@@ -1,1 +1,1 @@
-<CheapPrinters>{//Printer[@price<=200]}</CheapPrinters>
+distinct-values(//(Printer|Laptop)/parent::node()/@name/string())
