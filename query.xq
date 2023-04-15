@@ -1,1 +1,1 @@
-//Printer[@price < 1000]/@model/string()
+<CheapPrinters>{//Printer[@price<=200]}</CheapPrinters>
