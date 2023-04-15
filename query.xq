@@ -1,3 +1,3 @@
 for $maker in //Maker
-    where count($maker/PC[Speed/text() >= 2.0]) >= 2
+    where count($maker/PC[@price <= 1000]) = count($maker/PC)
     return $maker/@name/string()
