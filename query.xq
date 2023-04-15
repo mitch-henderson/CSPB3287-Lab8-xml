@@ -1,3 +1,3 @@
-for $maker in //Maker
-    where count($maker/PC[@price <= 1000]) = count($maker/PC)
-    return $maker/@name/string()
+
+    for $laptop in //Laptop
+        return <Laptop><Model>{$laptop/@model/string()}</Model><Maker>{$laptop/parent::node()/@name/string()}</Maker></Laptop>
